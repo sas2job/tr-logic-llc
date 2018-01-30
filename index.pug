@@ -1,0 +1,38 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    title Тестовое задание для TR Logic LLC
+    link(href="css/style.min.css", rel="stylesheet")
+  body.page
+    input.visually-hidden#toggle-aside-left(type="checkbox", checked)
+    input.visually-hidden#toggle-aside-right(type="checkbox", checked)
+    header.header.page__header
+      label.button.button--left(for="toggle-aside-left") left aside
+      .header__text header (height: 40px)
+      label.button.button--right(for="toggle-aside-right") right aside
+    main.page__main
+      section.main
+        section.main__description
+          | page description
+          br
+          | height: 100px
+        .main__container
+          section.main__content
+            | content
+            br
+            | max-width: 1024px
+          aside.main__aside
+            | always visible block
+            br
+            | width: 200px
+    aside.page__aside.page__aside--left
+      | left aside
+      br
+      | width: 300px
+    aside.page__aside.page__aside--right
+      | right aside
+      br
+      | width: 300px
+    footer.page__footer footer (height: 30px)
