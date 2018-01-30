@@ -1,0 +1,26 @@
+.main
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  padding: 10px
+
+.main__description
+  padding: 10px
+  border: 2px solid black
+
+.main__container
+  display: flex
+  justify-content: space-between
+  flex-grow: 1
+  padding: 10px 0
+
+.main__content
+  flex-grow: 1
+  max-width: "calc(100% - %s - 10px)" % (main-aside-width)
+
+.main__aside
+  width: main-aside-width
+  flex-shrink: 0
+  padding: 10px
+  background-color: violet
+  border: 2px solid black
