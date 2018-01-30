@@ -1,0 +1,42 @@
+.page
+  position: relative
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  padding-top: header-height
+  background-color: blue
+
+.page__header
+  position: fixed
+  top: 0
+  width: base-width
+  background-color: blue
+
+.page__main
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  max-width: 100%
+  border-left: 2px solid black
+  border-right: 2px solid black
+
+.page__aside
+  position: absolute
+  top: header-height
+  bottom: 0
+  width: aside-width
+  padding: 10px
+  background-color: grey
+  border: 2px solid black
+  
+  &--left
+    left: - aside-width
+  
+  &--right
+    right: - aside-width
+
+.page__footer
+  max-width: 100%
+  min-height: 30px
+  padding: 5px 10px
+  border: 2px solid black
