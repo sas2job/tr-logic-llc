@@ -1,0 +1,24 @@
+.page__aside
+  transition-duration: 0.5s
+  transform: scaleX(0)
+  opacity: 0
+  
+  &--left
+    transform-origin: right center
+  
+  &--right
+    transform-origin: left center
+
+#toggle-aside-left:checked ~ .header .button--left
+  opacity: 0.5
+
+#toggle-aside-left:checked ~ .page__aside--left
+  transform: scaleX(1)
+  opacity: 1
+
+#toggle-aside-right:checked ~ .header .button--right
+  opacity: 0.5
+
+#toggle-aside-right:checked ~ .page__aside--right
+  transform: scaleX(1)
+  opacity: 1
