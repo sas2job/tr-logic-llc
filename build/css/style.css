@@ -55,6 +55,7 @@ body {
 .page__header {
   position: fixed;
   top: 0;
+  z-index: 100;
   width: 1024px;
   background-color: #cfe2f3;
 }
@@ -112,6 +113,7 @@ body {
   border: 2px solid #000;
 }
 .main__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,6 +138,8 @@ body {
   padding: 10px;
   background-color: #dad2e9;
   border: 2px solid #000;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 .header {
   display: -webkit-box;
