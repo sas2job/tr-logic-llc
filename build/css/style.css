@@ -78,16 +78,17 @@ body {
   position: absolute;
   top: 40px;
   bottom: 0;
+  z-index: -1;
   width: 300px;
   padding: 10px;
   background-color: #d9d9d9;
   border: 2px solid #000;
 }
 .page__aside--left {
-  left: -300px;
+  left: 0;
 }
 .page__aside--right {
-  right: -300px;
+  right: 0;
 }
 .page__footer {
   max-width: 100%;
@@ -165,8 +166,6 @@ body {
 .page__aside {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
   opacity: 0;
 }
 .page__aside--left {
@@ -181,15 +180,13 @@ body {
   opacity: 0.5;
 }
 #toggle-aside-left:checked ~ .page__aside--left {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  left: -300px;
   opacity: 1;
 }
 #toggle-aside-right:checked ~ .header .button--right {
   opacity: 0.5;
 }
 #toggle-aside-right:checked ~ .page__aside--right {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  right: -300px;
   opacity: 1;
 }

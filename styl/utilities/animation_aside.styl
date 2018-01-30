@@ -1,6 +1,5 @@
 .page__aside
   transition-duration: 0.5s
-  transform: scaleX(0)
   opacity: 0
   
   &--left
@@ -13,12 +12,12 @@
   opacity: 0.5
 
 #toggle-aside-left:checked ~ .page__aside--left
-  transform: scaleX(1)
+  left: - aside-width
   opacity: 1
 
 #toggle-aside-right:checked ~ .header .button--right
   opacity: 0.5
 
 #toggle-aside-right:checked ~ .page__aside--right
-  transform: scaleX(1)
+  right: - aside-width
   opacity: 1

@@ -2,7 +2,7 @@
 
 Используемые инструменты и технологии:
 
-HTML/Pug
-CSS/Stylus
-Gulp
-JS
+* HTML/Pug
+* CSS/Stylus
+* Gulp
+* JS
