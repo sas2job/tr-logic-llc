@@ -116,7 +116,6 @@ body {
   border: 2px solid #000;
 }
 .main__container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,14 +134,25 @@ body {
   max-width: calc(100% - 200px - 10px);
 }
 .main__aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
   width: 200px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  min-height: 500px;
   padding: 10px;
   background-color: #dad2e9;
   border: 2px solid #000;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+.main__aside::before,
+.main__aside::after {
+  content: "";
+  display: table;
 }
 .header {
   display: -webkit-box;
