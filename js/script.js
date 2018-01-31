@@ -9,3 +9,4 @@ var header = document.querySelector(".header");
 var aside = document.querySelector(".main__aside");
 
 Stickyfill.addOne(aside);
+Stickyfill.addOne(header);
