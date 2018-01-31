@@ -1,23 +1,64 @@
+@keyframes open-left {
+  0% {
+    left: 0
+    opacity: 0
+  }
+  100% {
+    left: - aside-width
+    opacity: 1
+  }
+}
+
+@keyframes close-left {
+  0% {
+    left: - aside-width
+    opacity: 1
+  }
+  100% {
+    left: 0
+    opacity: 0
+  }
+}
+
+@keyframes open-right {
+  0% {
+    right: 0
+    opacity: 0
+  }
+  100% {
+    right: - aside-width
+    opacity: 1
+  }
+}
+
+@keyframes close-right {
+  0% {
+    right: - aside-width
+    opacity: 1
+  }
+  100% {
+    right: 0
+    opacity: 0
+  }
+}
+
 .page__aside
-  transition-duration: 0.5s
-  opacity: 0
-  
-  &--left
-    transform-origin: right center
-  
-  &--right
-    transform-origin: left center
+  transition-delay: 0.5s
 
 #toggle-aside-left:checked ~ .header .button--left
   opacity: 0.5
 
-#toggle-aside-left:checked ~ .page__aside--left
-  left: - aside-width
-  opacity: 1
-
 #toggle-aside-right:checked ~ .header .button--right
   opacity: 0.5
 
+#toggle-aside-left ~ .page__aside--left
+  animation: close-left 0.5s forwards
+
+#toggle-aside-left:checked ~ .page__aside--left
+  animation: open-left 0.5s forwards
+
+#toggle-aside-right ~ .page__aside--right
+  animation: close-right 0.5s forwards
+
 #toggle-aside-right:checked ~ .page__aside--right
-  right: - aside-width
-  opacity: 1
+  animation: open-right 0.5s forwards
