@@ -6,3 +6,5 @@
 * CSS/Stylus
 * Gulp
 * JS
+
+Опубликованная версия: https://alivander.github.io/tr-logic-llc/build/
