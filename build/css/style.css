@@ -83,12 +83,14 @@ body {
   padding: 10px;
   background-color: #d9d9d9;
   border: 2px solid #000;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 .page__aside--left {
-  left: 0;
+  left: -300px;
 }
 .page__aside--right {
-  right: 0;
+  right: -300px;
 }
 .page__footer {
   max-width: 100%;
@@ -162,10 +164,6 @@ body {
           flex-grow: 1;
   text-align: center;
   margin: 0 10px;
-}
-.page__aside {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
 }
 #toggle-aside-left:checked ~ .header .button--left {
   opacity: 0.5;
